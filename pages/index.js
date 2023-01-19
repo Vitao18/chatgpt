@@ -1491,7 +1491,7 @@ export default function Home() {
   return (
     <> {/* Since you don't need the div, you can just use a fragment. */}
         <Head>
-          <title>Talk w/GPT-3</title>
+          <title>IQVIA Talk with GPT-3</title>
           {/* Can repeat this shortened path pattern below on other images */}
           <link rel="icon" href={"icons/" + microphoneActive ? "microphone.png" : "mute.png"}/>
         </Head>
@@ -1500,7 +1500,7 @@ export default function Home() {
           <form onSubmit={onSubmit}>
             <span>
               {/* Suggest using CSS rather than repeated spaces */}
-              <b><i>Talk w/GPT-3&nbsp;&nbsp;&nbsp;&nbsp;</i></b>
+              <b><i>IQVIA Talk with GPT-3&nbsp;&nbsp;&nbsp;&nbsp;</i></b>
               <img src={microphoneActive ? "icons/microphone.png" : "icons/mute.png"}
                    className={styles.icon} onClick={toggleListenClick}
                    title="Toggle the microphone on/off. When the app starts up, the microphone is off by default. Most interactions with the app, including clicking this icon, can turn the microphone on."/>
