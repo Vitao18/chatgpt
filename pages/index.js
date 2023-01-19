@@ -1585,8 +1585,8 @@ export default function Home() {
                 <option value="80">80 y/o</option>
                 <option value="90">90 y/o</option>
                 <option value="100">100 y/o</option>
-              </select>
-            </span> */}
+              </select> */}
+            </span>
 
             {useVideoAvatar ? (
               <div className='video-container'>             {/* A video-container CSS class doesn't exist */}
