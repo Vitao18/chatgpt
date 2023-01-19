@@ -1509,7 +1509,7 @@ export default function Home() {
                    onClick={toggleChatbotActive}
                    title="Character toggles between awake/asleep states. When asleep the character won't respond. You may also say 'go to sleep' and 'wake up'."/>
 
-              <select
+              {/* <select
                   type="text" // This is invalid for a select element
                   name="language"
                   value={lang}
@@ -1517,16 +1517,16 @@ export default function Home() {
                   title="Select the language of the conversation"
                   // If you want, you can use a "point free" style here. The event will be passed to the handler, and you can read event.target.value there.
                   onChange={handleLanguageChange}
-              >
+              > */}
                 {/* Suggest creating an array of languages and mapping over it here. */}
-                <option value="en_US">English US</option>
+                {/* <option value="en_US">English US</option>
                 <option value="es_ES">Spanish ES</option>
                 <option value="fr_FR">French FR</option>
                 <option value="ja_JP">Japanese</option>
-              </select>
+              </select> */}
 
 
-              <select
+              {/* <select
                   id="voice-select"
                   type="text"
                   name="voice"
@@ -1535,15 +1535,15 @@ export default function Home() {
                   onChange={(e) => {
                     handleVoiceChange(e.target.value);
                   }}
-              >
+              > */}
                 {/* I suggest using filter first to clarify your intent (since your goal is to offer voiceOptions for a specific language). Note that I also added a key to eliminate the key warning. */}
-                {voiceOptions.filter((voice) => voice.language == lang).map((voice) => (
+                {/* {voiceOptions.filter((voice) => voice.language == lang).map((voice) => (
                   <option key={voice.value} value={voice.value}>{voice.label}</option>)
                 )}
-              </select>
+              </select> */}
 
 
-              <select
+              {/* <select
                   type="text"
                   name="age"
                   value={age}
@@ -1586,7 +1586,7 @@ export default function Home() {
                 <option value="90">90 y/o</option>
                 <option value="100">100 y/o</option>
               </select>
-            </span>
+            </span> */}
 
             {useVideoAvatar ? (
               <div className='video-container'>             {/* A video-container CSS class doesn't exist */}
